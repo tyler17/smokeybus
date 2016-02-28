@@ -12,8 +12,6 @@
         width: 100%;
         height: 75px;
         text-align: center;
-        vertical-align: middle;
-        line-height: 75px;
       }
     </style>
   </head>
@@ -27,15 +25,31 @@
         </div>
       </a>
       
-      <a href="https://rtuason.github.io/CS247-P4/general_report_page.html" class="btn btn-danger center-block">
-        Report an incident        
-      </a>
-      
+      <h3>Reported or detected incident:</h3>
+      <p>Flat tire detected</p>
+
+      <hr/>
+      <h3>Are there urgent medical concerns on the bus?</h3>
+      <div class="btn-group center-block" data-toggle="buttons-radio">
+        <label class="btn btn-primary center-block">
+          <input type="radio" name="options" id="yes"> Yes
+        </label>
+        <label class="btn btn-primary center-block">
+          <input type="radio" name="options" id="no"> No
+        </label>
+      </div>
+
+      <br/><br/><br/>
+      <h3>Report additional information below</h3>
+      <div>
+        <textarea class="form-control" rows="5"></textarea>
+      </div>
+
       <br/><br/>
-      <h2>Notifications:</h2>
-      <a href="https://rtuason.github.io/CS247-P4/incident_report_page.html" class="btn btn-warning center-block">
-        Non-threatening issue detected.<br/>
-        Please provide additional information here.        
+      <a href="https://rtuason.github.io/CS247-P4/thank_you.html">
+        <button class="btn btn-success center-block">
+          Submit report
+        </button>
       </a>
     </div> 
   </body>
