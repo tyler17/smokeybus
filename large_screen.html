@@ -1,1 +1,50 @@
-This'll be the large screen interface
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <style>
+      .guide-header {
+        background-color: gray;
+        color: white;
+        width: 100%;
+        height: 75px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 75px;
+      }
+
+      .countdown {
+        background-color: #d9534f;
+        color: white;
+        width: 10%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header guide-header">
+        <h3 style="vertical-align: middle; line-height: 75px;">
+          Attention
+        </h3>
+      </div>
+      
+      <h3>Flat tire detected. Bus cannot continue.</h3>
+      <h3>Another bus will be arriving to continue your route in:</h3>
+      <div class="countdown center-block">
+        28 minutes
+      </div>
+      
+      <hr/>
+      <h3>To contact an official and/or get updates on the situation:</h3>
+      <h4>- Call or text: (800) 555-5555</h4>
+      <h4>- Download MuniMobile on your smartphone</h4>
+    </div> 
+  </body>
+</html>
