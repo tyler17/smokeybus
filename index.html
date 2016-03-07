@@ -10,10 +10,40 @@
         background-color: gray;
         color: white;
         width: 100%;
-        height: 75px;
+        height: 65px;
         text-align: center;
         vertical-align: middle;
-        line-height: 75px;
+        line-height: 65px;
+      }
+
+      .countdown {
+        background-color: green;
+        color: white;
+        width: 270px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 22px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .notification_time {
+        font-size: 22px;
+      }
+
+      .notification_text {
+        font-weight: bold;
+        font-size: 22px;
+      }
+
+      .panel-title{
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .btn{
+        text-align: center;
       }
     </style>
   </head>
@@ -26,17 +56,42 @@
           </h3>
         </div>
       </a>
-      
-      <a href="https://rtuason.github.io/CS247-P4/general_report_page.html" class="btn btn-danger center-block">
-        Report an incident        
-      </a>
-      
-      <br/><br/>
-      <h2>Notifications:</h2>
-      <a href="https://rtuason.github.io/CS247-P4/incident_report_page.html" class="btn btn-warning center-block">
-        Non-threatening issue detected.<br/>
-        Please provide additional information here.        
-      </a>
+
+      <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Notifications</h3>
+          </div>
+          <div class="panel-body">
+            <div>
+            <span class="notification_time col-md-3">12:42pm</span>
+            <span class="notification_text">New bus now arriving at 1:15</span>
+            </div>
+            <br/>
+            <div>
+            <span class="notification_time col-md-3"> 12:38pm</span>
+            <span class="notification_text">New bus arriving at 1:05</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Issues</h3>
+          </div>
+          <div class="panel-body">
+            <div>
+            <span class="notification_time col-md-3"> 12:30pm</span>
+            <a href="https://rtuason.github.io/CS247-P4/incident_report_page.html" class="notification_text">Flat Tire</span>
+            </div>
+            <br/>
+            <div>
+            <button type="button" href="https://rtuason.github.io/CS247-P4/general_report_page.html" class="notification_text btn btn-primary-outline glyphicon glyphicon-plus">
+              Add a New Issue
+            </button>
+            </div>
+          </div>
+        </div>
+        
     </div> 
   </body>
 </html>

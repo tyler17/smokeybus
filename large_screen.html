@@ -7,48 +7,91 @@
 
     <style>
       .guide-header {
-        background-color: gray;
+        background-color: #ff0000;
         color: white;
         width: 100%;
-        height: 75px;
+        height: 55px;
         text-align: center;
         vertical-align: middle;
-        line-height: 75px;
+        line-height: 55px;
       }
 
       .countdown {
-        background-color: #d9534f;
+        background-color: green;
         color: white;
-        width: 100px;
-        height: 30px;
-        line-height: 30px;
+        width: 230px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 22px;
         text-align: center;
         vertical-align: middle;
       }
+
+      .notification_time {
+        font-size: 22px;
+      }
+
+      .notification_text {
+        font-weight: bold;
+        font-size: 22px;
+      }
+
+      .panel-title{
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+      }
+
     </style>
   </head>
   <body>
     <div class="container">
       <div class="page-header guide-header">
-        <h3 style="vertical-align: middle; line-height: 75px;">
+        <h3 style="vertical-align: middle; line-height: 55px;">
           Attention
         </h3>
       </div>
-      
-      <h3>Flat tire detected. Bus cannot continue.</h3>
-      <h3>Another bus will be arriving to continue your route in:</h3>
-      <br/>
-      <div class="countdown center-block">
-        28 minutes
+      <div class="col-md-7">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Notifications</h3>
+          </div>
+          <div class="panel-body">
+            <div>
+            <span class="notification_time col-md-3">12:42pm</span>
+            <span class="notification_text">New bus now arriving at 1:15</span>
+            </div>
+            <br/>
+            <div>
+            <span class="notification_time col-md-3"> 12:38pm</span>
+            <span class="notification_text">New bus arriving at 1:05</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Issues</h3>
+          </div>
+          <div class="panel-body">
+            <div>
+            <span class="notification_time col-md-3"> 12:30pm</span>
+            <span class="notification_text">Flat Tire</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="countdown center-block">
+          New bus arriving in 28 minutes
+        </div>
+        <br/>
+        <img class="center-block" src="large_screen_map.png" alt="Bus Tracking Image"/>
       </div>
 
-      <br/>
-      <img class="center-block" src="tracking_image.png" alt="Bus Tracking Image"/>
-      
-      <hr/>
-      <h3>To contact an official and/or get updates on the situation:</h3>
-      <h4>- Call or text: (800) 555-5555</h4>
-      <h4>- Download MuniMobile on your smartphone</h4>
-    </div> 
+      <div class="col-md-5">
+        <iframe width="440px" height="796.5px" src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1"></iframe>
+      </div>
+
+    </div>
   </body>
 </html>
