@@ -7,7 +7,7 @@
 
     <style>
       .guide-header {
-        background-color: gray;
+        background-color: blue;
         color: white;
         width: 100%;
         height: 50px;
@@ -32,7 +32,7 @@
       }
 
       .notification_text {
-        font-weight: bold;
+        /*font-weight: bold;*/
         font-size: 22px;
       }
 
@@ -42,7 +42,7 @@
         font-weight: bold;
       }
 
-      .btn{
+      .btn {
         text-align: center;
       }
     </style>
@@ -57,41 +57,44 @@
         </div>
       </a>
 
-      <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Notifications</h3>
-          </div>
-          <div class="panel-body">
-            <div>
-            <span class="notification_time col-md-3">12:42pm</span>
-            <span class="notification_text">New bus now arriving at 1:15</span>
-            </div>
-            <br/>
-            <div>
-            <span class="notification_time col-md-3"> 12:38pm</span>
-            <span class="notification_text">New bus arriving at 1:05</span>
-            </div>
-          </div>
-        </div>
+      <span class="btn btn-success" style="width:100%">
+        <h4 style="font-size: 22px">Flat tire detected</h4>
+      </span>
 
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Issues</h3>
+      <br/><br/>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Status Updates</h3>
+        </div>
+        <div class="panel-body">
+          <div>
+            <span class="notification_time col-xs-3">12:39pm</span>
+            <span class="notification_text">
+              Conference with conductor ended.
+            </span>
           </div>
-          <div class="panel-body">
-            <div>
-            <span class="notification_time col-md-3"> 12:30pm</span>
-            <a href="https://rtuason.github.io/CS247-P4/incident_report_page.html" class="notification_text">Flat Tire</span>
-            </div>
-            <br/>
-            <div>
-            <button type="button" href="https://rtuason.github.io/CS247-P4/general_report_page.html" class="notification_text btn btn-primary-outline glyphicon glyphicon-plus">
-              Add a New Issue
-            </button>
-            </div>
+          <div>
+            <span class="notification_time col-xs-3"></span>
+            <span class="notification_text">
+              Contact us again to provide additional information.
+            </span>
+          </div>
+          <br/>
+          <div>
+            <span class="notification_time col-xs-3">12:37pm</span>
+            <span class="notification_text">
+              Replacement bus arriving at 1:05pm.
+            </span>
+          </div>
+          <br/>
+          <div>
+            <span class="notification_time col-xs-3">12:36pm</span>
+            <span class="notification_text">
+              Flat tire detected. Pulling over. Contacting an official...
+            </span>
           </div>
         </div>
-        
+      </div>
     </div> 
   </body>
 </html>
