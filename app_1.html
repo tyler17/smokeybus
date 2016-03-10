@@ -35,7 +35,7 @@
         font-size: 15px;
       }
       .notification_text {
-        font-weight: bold;
+        /*font-weight: bold;*/
         font-size: 18px;
         display: inline-block;
       }
@@ -107,7 +107,7 @@
       </a>
 
       <div class="bus_issue">
-        Engine Malfunction
+        Collision detected
       </div>
 
       <div class="panel panel-default">
@@ -115,25 +115,23 @@
             <h3 class="panel-title">Status Updates</h3>
           </div>
           <div class="panel-body">
-            <div class="emergency_notification">
-            <span class="notification_time col-xs-3">12:42pm</span>
-            <div class="notification_text">Evacuate Bus Immediately!</div>
-            </div>
             
             <div class="regular_notification">
-            <span class="notification_time col-xs-3"> 12:38pm</span>
-            <div class="notification_text">New bus arriving at 1:05</div>
+              <span class="notification_time col-xs-3"> 12:36pm</span>
+              <div class="notification_text">
+                Collision detected. Connecting with official...
+              </div>
             </div>
+
           </div>
       </div>
-      <div class="bus_arrival">
-        New bus arriving in 26 minutes
-      </div>
-      <img class="center-block" src="iphone_map.png" alt="Bus Tracking Image" style="width: 100%"/>
+      <hr/>
+
+      <img class="center-block" src="current_location.png" alt="Bus Tracking Image" style="width: 100%"/>
       <div class="bus_number">
         You are currently on bus #1175
       </div>
-      <a href="https://tyler17.github.io/CS247-P4/contacting_conductor.html">
+      <a href="https://rtuason.github.io/CS247-P4/contacting_conductor.html">
         <div class="btn btn-primary" style="width:100%">
           <h4 style="font-size: 22px">Call Conductor</h4>
         </div>
