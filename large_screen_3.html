@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <style>
+      .guide-header {
+        background-color: #d9534f;
+        color: white;
+        width: 100%;
+        height: 55px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 55px;
+      }
+
+      .countdown {
+        background-color: green;
+        color: white;
+        width: 230px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 22px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .notification_time {
+        font-size: 22px;
+      }
+
+      .notification_text {
+        /*font-weight: bold;*/
+        font-size: 22px;
+      }
+
+      .panel-title{
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .conductor-img {
+        width: 75%;
+        border: 3px solid black;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header guide-header">
+        <h3 style="vertical-align: middle; line-height: 55px;">
+          Attention
+        </h3>
+      </div>
+      <div class="col-md-9">
+
+        <span class="btn btn-success" style="width:100%">
+          <h4 style="font-size: 22px">Collision detected</h4>
+        </span>
+
+        <br/><br/>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Status Updates</h3>
+          </div>
+          <div class="panel-body">
+            <div>
+              <span class="notification_time col-md-3">12:39pm</span>
+              <span class="notification_text">
+                Conference with conductor ended.
+              </span>
+            </div>
+            <div>
+              <span class="notification_time col-md-3"></span>
+              <span class="notification_text">
+                Contact us again to provide additional information.
+              </span>
+            </div>
+            <br/>
+            <div>
+              <span class="notification_time col-md-3">12:37pm</span>
+              <span class="notification_text">
+                Replacement bus arriving at 1:05pm.
+              </span>
+            </div>
+            <br/>
+            <div>
+              <span class="notification_time col-md-3">12:36pm</span>
+              <span class="notification_text">
+                Flat tire detected. Pulling over. Contacting an official...
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        <span class="btn btn-success center-block" style="width:52%">
+          <h4 style="font-size: 22px">
+            New bus arriving in 26 minutes (1:05pm)
+          </h4>
+        </span>
+        <br/>
+        <img class="center-block" src="large_screen_map.png" alt="Bus Tracking Image"/>
+        <br/><br/>
+      </div>
+
+      <div class="col-md-3">
+        <div class="panel panel-default" style="width:100%">
+          <div class="panel-heading">
+            <h3 class="panel-title">Contact for Help</h3>
+          </div>
+          <div class="panel-body">
+            <div class="notification_text">
+              Push red button in front or back of bus
+            </div>
+            <br/>
+
+            <div class="notification_text" style="text-align: center">
+              OR
+            </div>
+            <br/>
+
+            <div class="notification_text">
+              Press "Contact Conductor" on our app
+            </div>
+            <hr/>
+
+            <img src="silhouette.png" class="conductor-img center-block"/>
+            <div class="notification_text" style="text-align: center">
+              An official is
+            </div>
+            <div class="notification_text" style="text-align: center">
+              ready for standby
+            </div>
+
+            <hr/>
+            <div class="notification_text">Bus #1175</div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

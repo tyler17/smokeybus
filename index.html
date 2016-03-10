@@ -6,6 +6,151 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <style>
+      .container{
+        margin: 0px;
+        padding: 0px;
+      }
+      .guide-header {
+        background-color: gray;
+        color: white;
+        width: 100%;
+        height: 55px;
+        text-align: center;
+        line-height: 55px;
+        margin: 0px;
+        font-weight: bold;
+        font-size: 22px;
+      }
+      .countdown {
+        background-color: green;
+        color: white;
+        width: 270px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 22px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .notification_time {
+        font-size: 15px;
+      }
+      .notification_text {
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+      }
+      .emergency_notification{
+        outline: solid orangered thick;
+        margin-bottom: 10px;
+        left-padding: 0px;
+      }
+      .regular_notification{
+        margin-bottom: 5px;
+        left-padding: 0px;
+      }
+      .bus_issue{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        color: white;
+        margin-top: 8px;
+        font-weight: bold;
+        font-size: 26px;
+      }
+      .bus_arrival{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        color: white;
+        font-size: 18px;
+        margin-bottom: -1px;
+      }
+      .bus_number{
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .panel-title{
+        font-size: 21px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .panel-body{
+        padding: 4px;
+      }
+      .btn{
+        text-align: center;
+      }
+      .panel {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="https://tyler17.github.io/CS247-P4/">
+        <div class="guide-header">
+            Conductor
+        </div>
+      </a>
+
+      <div class="bus_issue">
+        Engine Malfunction
+      </div>
+
+      <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Status Updates</h3>
+          </div>
+          <div class="panel-body">
+            <div class="emergency_notification">
+            <span class="notification_time col-xs-3">12:42pm</span>
+            <div class="notification_text">Evacuate Bus Immediately!</div>
+            </div>
+            
+            <div class="regular_notification">
+            <span class="notification_time col-xs-3"> 12:38pm</span>
+            <div class="notification_text">New bus arriving at 1:05</div>
+            </div>
+          </div>
+      </div>
+      <div class="bus_arrival">
+        New bus arriving in 26 minutes
+      </div>
+      <img class="center-block" src="iphone_map.png" alt="Bus Tracking Image" style="width: 100%"/>
+      <div class="bus_number">
+        You are currently on bus #1175
+      </div>
+      <a href="https://tyler17.github.io/CS247-P4/contacting_conductor.html">
+        <div class="btn btn-primary" style="width:100%">
+          <h4 style="font-size: 22px">Call Conductor</h4>
+        </div>
+      </a>
+        
+    </div> 
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <style>
       .guide-header {
         background-color: #5bc0de;
         color: white;
@@ -127,4 +272,4 @@
 
     </div> 
   </body>
-</html>
+</html> -->
