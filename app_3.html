@@ -11,7 +11,7 @@
         padding: 0px;
       }
       .guide-header {
-        background-color: gray;
+        background-color: #d9534f;
         color: white;
         width: 100%;
         height: 55px;
@@ -32,12 +32,12 @@
         vertical-align: middle;
       }
       .notification_time {
-        font-size: 18px;
-        font-weight: bold;
+        font-size: 15px;
       }
       .notification_text {
         font-size: 18px;
-        display: inline-block;
+        /*display: inline-block;*/
+        text-align: center;
       }
       .emergency_notification{
         outline: solid orangered thick;
@@ -49,8 +49,7 @@
         left-padding: 0px;
       }
       .bus_issue{
-        background-color: #5cb85c;
-        border-color: #4cae4c;
+        background-color: mediumseagreen;
         height: 50px;
         line-height: 50px;
         text-align: center;
@@ -61,20 +60,6 @@
         margin-top: 8px;
         font-weight: bold;
         font-size: 26px;
-      }
-      .bus_arrival{
-        background-color: #5cb85c;
-        border-color: #4cae4c;
-        height: 30px;
-        line-height: 30px;
-        text-align: center;
-        padding: 0px;
-        margin: 0px;
-        border: 0px;
-        color: white;
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: -1px;
       }
       .bus_number{
         height: 55px;
@@ -94,213 +79,57 @@
       .btn{
         text-align: center;
       }
-      .panel {
-        margin-bottom: 8px;
+      .all_good {
+        font-size: 30px;
+        color: white;
+        background-color: darkturquoise;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 40px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <a href="https://tyler17.github.io/CS247-P4/">
-        <div class="page-header guide-header" style="padding: 0px">
-          <div style="font-size: 24px">Conductor</div>
-        </div>
-      </a>
+      
+      <div class="guide-header">
+        Car Collision Detected
+      </div>
       <hr/>
 
-      <div class="bus_issue">
-        Collision detected
+      <div class="btn btn-success" style="width:100%">
+        <h4 style="font-size: 18px">New bus arriving in 26 minutes (1:05pm)</h4>
       </div>
-      <br/>
+      <br/><br/>
 
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">Status Updates</h3>
+          <h3 class="panel-title">Safety Instructions</h3>
         </div>
         <div class="panel-body">
-          
-          <div class="regular_notification">
-            <span class="notification_time col-xs-3">12:39pm </span>
-            <div class="notification_text">Conference with conductor</div>
+          <div class="notification_text">
+            Please wait patiently
           </div>
-
-          <div class="regular_notification">
-            <span class="notification_time col-xs-3"> </span>
-            <div class="notification_text">ended. Contact us again to</div>
+          <div class="notification_text">
+            Everything is safe
           </div>
-
-          <div class="regular_notification">
-            <span class="notification_time col-xs-3"> </span>
-            <div class="notification_text">provide more information</div>
-          </div>
-
-          <div class="regular_notification">
-            <span class="notification_time col-xs-3">12:37pm </span>
-            <div class="notification_text">New bus arriving at 1:05pm</div>
-          </div>
-
-          <div class="regular_notification">
-            <span class="notification_time col-xs-3">12:36pm </span>
-            <div class="notification_text">Collision detected</div>
-          </div>
-
-          <div class="regular_notification">
-            <span class="notification_time col-xs-3"> </span>
-            <div class="notification_text">Connecting with an official...</div>
-          </div>
-
         </div>
-      </div>
-      <hr/>
-      
-      <div class="bus_arrival">
-        New bus arriving in 28 minutes (1:05pm)
       </div>
       <br/>
 
-      <img class="center-block" src="iphone_map.png" alt="Bus Tracking Image" style="width: 100%"/>
-      <hr/>
+      <img class="center-block" src="iphone_map.png" alt="Bus Tracking Image" style="width: 100%" />
+      <br/>
 
       <div class="bus_number">
         You are currently on bus #1175
       </div>
       <a href="https://rtuason.github.io/CS247-P4/contacting_conductor.html">
         <div class="btn btn-primary" style="width:100%">
-          <h4 style="font-size: 22px">Call Conductor</h4>
+          <h4 style="font-size: 24px">Call Us</h4>
         </div>
       </a>
         
     </div> 
   </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <style>
-      .guide-header {
-        background-color: #5bc0de;
-        color: white;
-        width: 100%;
-        height: 60px;
-        text-align: center;
-        vertical-align: middle;
-      }
-
-      .countdown {
-        background-color: green;
-        color: white;
-        width: 270px;
-        height: 35px;
-        line-height: 35px;
-        font-size: 22px;
-        text-align: center;
-        vertical-align: middle;
-      }
-
-      .notification_time {
-        font-size: 22px;
-        font-weight: bold;
-      }
-
-      .notification_text {
-        font-size: 22px;
-      }
-
-      .panel-title{
-        font-size: 22px;
-        text-align: center;
-        font-weight: bold;
-      }
-
-      .btn {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <a href="https://rtuason.github.io/CS247-P4/">
-        <div class="page-header guide-header">
-          <div style='font-size: 20px; line-height: 32px'>
-            Conductor
-          </div>
-          <div style="font-size: 16px;">
-            Guiding a world in transit
-          </div>
-        </div>
-      </a>
-
-      <hr/>
-      <div class="btn btn-success" style="width:100%">
-        <h4 style="font-size: 22px">Flat tire detected</h4>
-      </div>
-
-      <br/><br/>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Status Updates</h3>
-        </div>
-        <div class="panel-body">
-          <div>
-            <span class="notification_time">12:39pm </span>
-            <span class="notification_text">
-              - Conference with conductor ended.
-            </span>
-          </div>
-          <div>
-            <span class="notification_time"></span>
-            <span class="notification_text">
-              Contact us again to provide additional information.
-            </span>
-          </div>
-          <br/>
-          <div>
-            <span class="notification_time">12:37pm </span>
-            <span class="notification_text">
-              - Replacement bus arriving at 1:05pm.
-            </span>
-          </div>
-          <br/>
-          <div>
-            <span class="notification_time">12:36pm </span>
-            <span class="notification_text">
-              - Flat tire detected. Pulling over. Contacting an official...
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <hr/>
-      <span class="btn btn-success center-block" style="width:100%">
-        <div class="notification_text">
-          New bus arriving in 26 minutes
-        </div>
-        <div class="notification_text">
-          (1:05pm)
-        </div>
-      </span>
-      <br/>
-        <img class="center-block" src="large_screen_map.png" alt="Bus Tracking Image" style="width: 100%"/>
-      <br/>
-
-      <hr/>
-      <div class="notification_text" style="text-align: center">
-        You are currently on bus #1175
-      </div>
-      <br/>
-
-      <a href="https://rtuason.github.io/CS247-P4/contacting_conductor.html">
-        <div class="btn btn-primary" style="width:100%">
-          <h4 style="font-size: 22px">Contact Conductor</h4>
-        </div>
-      </a>
-      <br/><br/>
-
-    </div> 
-  </body>
-</html> -->
