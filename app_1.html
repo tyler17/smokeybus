@@ -11,6 +11,140 @@
         padding: 0px;
       }
       .guide-header {
+        background-color: #d9534f;
+        color: white;
+        width: 100%;
+        height: 55px;
+        text-align: center;
+        line-height: 55px;
+        margin: 0px;
+        font-weight: bold;
+        font-size: 22px;
+      }
+      .countdown {
+        background-color: green;
+        color: white;
+        width: 270px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 22px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .notification_time {
+        font-size: 15px;
+      }
+      .notification_text {
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+      }
+      .emergency_notification{
+        outline: solid orangered thick;
+        margin-bottom: 10px;
+        left-padding: 0px;
+      }
+      .regular_notification{
+        margin-bottom: 5px;
+        left-padding: 0px;
+      }
+      .bus_issue{
+        background-color: mediumseagreen;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        color: white;
+        margin-top: 8px;
+        font-weight: bold;
+        font-size: 26px;
+      }
+      .bus_number{
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .panel-title{
+        font-size: 21px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .panel-body{
+        padding: 4px;
+      }
+      .btn{
+        text-align: center;
+      }
+      .all_good {
+        font-size: 30px;
+        color: white;
+        background-color: darkturquoise;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="guide-header">
+        Car Collision Detected
+      </div>
+      <hr/>
+
+      <div class="btn btn-success" style="width:100%">
+        <h4 style="font-size: 24px">Contacting an official...</h4>
+      </div>
+      <br/><br/>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Safety Instructions</h3>
+        </div>
+        <div class="panel-body">
+          <div class="regular_notification">
+            <div class="notification_text">Please wait patiently</div>
+          </div>
+
+        </div>
+      </div>
+      <hr/>
+
+      <img class="center-block" src="current_location.png" alt="Bus Tracking Image" style="width: 100%" />
+      <hr/>
+
+      <div class="bus_number">
+        You are currently on bus #1175
+      </div>
+      <a href="https://rtuason.github.io/CS247-P4/contacting_conductor.html">
+        <div class="btn btn-primary" style="width:100%">
+          <h4 style="font-size: 24px">Call Us</h4>
+        </div>
+      </a>
+        
+    </div> 
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <style>
+      .container{
+        margin: 0px;
+        padding: 0px;
+      }
+      .guide-header {
         background-color: gray;
         color: white;
         width: 100%;
@@ -149,53 +283,6 @@
     </div> 
   </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <style>
-      .guide-header {
-        background-color: #5bc0de;
-        color: white;
-        width: 100%;
-        height: 60px;
-        text-align: center;
-        vertical-align: middle;
-      }
-
-      .countdown {
-        background-color: green;
-        color: white;
-        width: 270px;
-        height: 35px;
-        line-height: 35px;
-        font-size: 22px;
-        text-align: center;
-        vertical-align: middle;
-      }
-
-      .notification_time {
-        font-size: 22px;
-        font-weight: bold;
-      }
-
-      .notification_text {
-        font-size: 22px;
-      }
-
-      .panel-title{
-        font-size: 22px;
-        text-align: center;
-        font-weight: bold;
-      }
-
-      .btn {
-        text-align: center;
-      }
     </style>
   </head>
   <body>
@@ -249,21 +336,6 @@
             </span>
           </div>
         </div>
-      </div>
-
-      <hr/>
-      <span class="btn btn-success center-block" style="width:100%">
-        <div class="notification_text">
-          New bus arriving in 26 minutes
-        </div>
-        <div class="notification_text">
-          (1:05pm)
-        </div>
-      </span>
-      <br/>
-        <img class="center-block" src="large_screen_map.png" alt="Bus Tracking Image" style="width: 100%"/>
-      <br/>
-
       <hr/>
       <div class="notification_text" style="text-align: center">
         You are currently on bus #1175
